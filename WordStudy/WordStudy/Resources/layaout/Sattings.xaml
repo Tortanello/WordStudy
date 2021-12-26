@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordStudy.Resources.layaout.Sattings"
+             xmlns:local="clr-namespace:WordStudy.Resources.Custom"
+             BackgroundColor="#c8ffff">
+    <Frame CornerRadius="20"  
+       BorderColor="#4dbbfa"
+       BackgroundColor="#b0ffff"
+       HasShadow="True"
+       Margin="20 20 30 20">
+        <StackLayout Background="#b0ffff">
+            <Label Text="Настройки" FontSize="30" HorizontalOptions="CenterAndExpand"  Margin="22 20 20 20" FontFamily="Times New Roman"/>
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="45" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Switch x:Name="Switch_F_N" IsToggled="true" HorizontalOptions="Start" Grid.Column="0" Toggled="Switch_F"/>
+                <!--Label Text="First word is big letter" FontSize="15" FontAttributes="Bold" Grid.Column="1"/-->
+                <Label Text="Все слова с большой буквы" FontSize="15" FontAttributes="Bold" Grid.Column="1"/>
+            </Grid>
+
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="45" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Switch x:Name="Switch_De_Activetion_Transcription" IsToggled="true" HorizontalOptions="Start" Grid.Column="0" Toggled="Switch_De_Activetion_Transcription_Toggled_"/>
+                <!--Label Text="First word is big letter" FontSize="15" FontAttributes="Bold" Grid.Column="1"/-->
+                <Label Text="Включить поле Transcription" FontSize="15" FontAttributes="Bold" Grid.Column="1"/>
+            </Grid>
+
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="45" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Switch x:Name="Switch_De_Activetion_Language" IsToggled="true" HorizontalOptions="Start" Grid.Column="0" Toggled="Switch_De_Activetion_Language_"/>
+                <!--Label Text="First word is big letter" FontSize="15" FontAttributes="Bold" Grid.Column="1"/-->
+                <Label Text="Убрать Language из списка слов" FontSize="15" FontAttributes="Bold" Grid.Column="1"/>
+            </Grid>
+            <Button x:Name="Back" Text="Назад" FontAttributes="None" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="0"  FontSize="Medium" Margin="10 0 0 0" HorizontalOptions="Fill"  VerticalOptions="EndAndExpand" Clicked="Back_" />
+        </StackLayout>
+    </Frame>
+</ContentPage>

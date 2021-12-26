@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordStudy.Resources.layaout.LayaoutListWord.LayaoutAddLanguage.Add_Language"
+             xmlns:local="clr-namespace:WordStudy.Resources.Custom"
+             BackgroundColor="#c8ffff">
+    
+    <Frame CornerRadius="20"  
+       BorderColor="#4dbbfa"
+       BackgroundColor="#b0ffff"
+       HasShadow="True"
+       Margin="20 20 30 20">
+
+        <StackLayout Background="#b0ffff">
+
+            <Label Text="Добавить язык" FontSize="25" HorizontalOptions="CenterAndExpand"  Margin="22 20 20 30" FontFamily="Times New Roman"/>
+
+            <Label Text="Add a language" FontAttributes="Bold" Padding="20 0 20 0" HorizontalOptions="Center" FontSize="20"/>
+            <Frame CornerRadius="20"  BackgroundColor="#b0ffff" HasShadow="True"  Padding="0 0 0 0" Margin="0 60 0 60" VerticalOptions="Start" >
+                <local:MyEntry Text="{Binding Language}" x:Name="MyEntry_Language_Add"/>
+            </Frame>
+
+            <Button x:Name="Add_a_lang" Text="Добавить язык" Padding="0 0 0 0" HorizontalOptions="Fill" CornerRadius="20" FontAttributes="None" FontSize="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Margin="300 0 0 0" VerticalOptions="EndAndExpand" Clicked="Add_lang" />
+
+            <Button x:Name="Back" Text="Назад" FontAttributes="None" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="0"  FontSize="Medium" Margin="0 0 0 0" HorizontalOptions="Fill"  VerticalOptions="EndAndExpand" Clicked="Back_" />
+        </StackLayout>
+    </Frame>
+</ContentPage>

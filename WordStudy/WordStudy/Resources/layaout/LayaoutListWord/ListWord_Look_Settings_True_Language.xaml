@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordStudy.Resources.layaout.LayaoutListWord.ListWord_Look_Settings_True_Language"
+             xmlns:local="clr-namespace:WordStudy.Resources.Custom"
+             BackgroundColor="#c8ffff">
+    <Frame CornerRadius="20"  
+       BorderColor="#4dbbfa"
+       BackgroundColor="#b0ffff"
+       HasShadow="True"
+       Margin="20 20 30 20">
+
+
+
+        <StackLayout Background="#b0ffff">
+            <Label Text="Список слов" FontSize="25" HorizontalOptions="CenterAndExpand"  Margin="22 20 20 30" FontFamily="Times New Roman"/>
+
+            <CollectionView ItemsSource="{Binding}" x:Name="WordList" ItemsLayout="VerticalList">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnSpacing="50">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+
+                            <Label x:Name="Language" Text="{Binding Word}" FontSize="Large" Margin="0 0 0 5" Grid.Row="0"/>
+                            <Label Text="{Binding Translated}" FontSize="Medium" TextColor="Gray" Margin="0 0 0 10" Grid.Row="1"/>
+
+                            <BoxView HeightRequest="0.1" Color="#4dbbfa" Grid.RowSpan="2" VerticalOptions="End" Margin="5 5 0 5"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Button x:Name="Back" Text="Назад" FontAttributes="None" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="0"  FontSize="Medium" Margin="10 0 0 0" HorizontalOptions="Fill"  VerticalOptions="End" Clicked="Back_" />
+        </StackLayout>
+
+    </Frame>
+</ContentPage>

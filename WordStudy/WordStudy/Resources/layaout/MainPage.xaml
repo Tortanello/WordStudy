@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordStudy.Resources.layaout.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout Background="#c8ffff">
+
+        <Label Text="WordStudy" HorizontalOptions="Center" Margin="20" FontSize="70" FontFamily="Times New Roman"></Label>
+
+        <Button x:Name="StartStudyF" FontSize="30" Text="Начать" CornerRadius="15" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Margin="40 0 0 0" Padding="20 80 20 80" HorizontalOptions="CenterAndExpand"  Clicked="Start" />
+        
+        <Button x:Name="ListLetterF" FontSize="20" Text="Слова" CornerRadius="15" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Margin="40 0 0 0" Padding="20 57 20 57" HorizontalOptions="CenterAndExpand" Clicked="ListWord"/>
+        
+        <Button x:Name="SattingF" FontSize="20" Text="Настройки" CornerRadius="15" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Margin="20 0 0 0" Padding="20 30 20 30"  HorizontalOptions="CenterAndExpand" Clicked="Satting"/>
+       
+        <Button x:Name="EscapeF" FontSize="25" Text="Выход" CornerRadius="15" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Margin="40 0 0 0" Padding="20 70 20 70" HorizontalOptions="CenterAndExpand"  Clicked="Exit"/>
+
+    </StackLayout>
+
+</ContentPage>

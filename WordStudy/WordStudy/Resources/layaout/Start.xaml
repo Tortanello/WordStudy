@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordStudy.Resources.layaout.Start"
+             >
+    <StackLayout Background="#c8ffff">
+        <Frame x:Name="FraimWord" HasShadow="True" CornerRadius="15" BorderColor="#4dbbfa" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Padding="20 70 20 70"  Margin="20 20 20 20" >
+            <Label Text="Выбор слов!" FontSize="25"/>
+        </Frame>
+
+        <Frame x:Name="FraimWord_" HasShadow="True" CornerRadius="15" BorderColor="#4dbbfa" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Padding="20 70 20 70"  Margin="20 20 20 20" >
+            <Label Text="Выбор слов!" FontSize="25"/>
+        </Frame>
+
+        <Frame x:Name="FraimWord__" HasShadow="True" CornerRadius="15" BorderColor="#4dbbfa" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Padding="20 70 20 70"  Margin="20 20 20 20" >
+            <Label Text="Выбор слов!" FontSize="25"/>
+        </Frame>
+
+        <Frame x:Name="FraimWord___" HasShadow="True" CornerRadius="15" BorderColor="#4dbbfa" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Padding="20 70 20 70"  Margin="20 20 20 20" >
+            <Label Text="Выбор слов!" FontSize="25"/>
+        </Frame>
+
+        <Frame x:Name="FraimWord____" HasShadow="True" CornerRadius="15" BorderColor="#4dbbfa" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Padding="20 70 20 70"  Margin="20 20 20 20" >
+            <Label Text="Выбор слов!" FontSize="25"/>
+        </Frame>
+
+        <Frame x:Name="FraimWord_____" HasShadow="True" CornerRadius="15" BorderColor="#4dbbfa" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Padding="20 70 20 70"  Margin="20 20 20 20" >
+            <Label Text="Выбор слов!" FontSize="25"/>
+        </Frame>
+    </StackLayout>
+</ContentPage>

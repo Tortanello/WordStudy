@@ -1,0 +1,90 @@
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\Sattings.xaml.g.cs
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\Start.xaml.g.cs
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.AssemblyInfoInputs.cache
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.AssemblyInfo.cs
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.csproj.CoreCompileInputs.cache
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.dll
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\ref\WordStudy.dll
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.pdb
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\WordStudy.deps.json
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\WordStudy.dll
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\ref\WordStudy.dll
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\WordStudy.pdb
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\MainPage.xaml.g.cs
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\ListWordMain.xaml.g.cs
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\ListWorld.xaml.g.cs
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\Insert_Language.xaml.g.cs
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\Insert_Language_Translated.xaml.g.cs
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\ListWord_Look.xaml.g.cs
+C:\Users\zheny\Desktop\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.csproj.AssemblyReference.cache
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\WordStudy.deps.json
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\WordStudy.dll
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\ref\WordStudy.dll
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\WordStudy.pdb
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.csproj.AssemblyReference.cache
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\Insert_Language.xaml.g.cs
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\Insert_Language_Translated.xaml.g.cs
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\ListWord_Look.xaml.g.cs
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\ListWorld.xaml.g.cs
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\ListWordMain.xaml.g.cs
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\MainPage.xaml.g.cs
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\Sattings.xaml.g.cs
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\Start.xaml.g.cs
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.AssemblyInfoInputs.cache
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.AssemblyInfo.cs
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.csproj.CoreCompileInputs.cache
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.dll
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\ref\WordStudy.dll
+C:\Users\zheny\OneDrive\Рабочий стол\Рабочий стол\Прогроммирование\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.pdb
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\WordStudy.deps.json
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\WordStudy.dll
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\ref\WordStudy.dll
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\WordStudy.pdb
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.csproj.AssemblyReference.cache
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\Insert_Language.xaml.g.cs
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\Insert_Language_Translated.xaml.g.cs
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\ListWord_Look.xaml.g.cs
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\ListWorld.xaml.g.cs
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\ListWordMain.xaml.g.cs
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\MainPage.xaml.g.cs
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\Sattings.xaml.g.cs
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\Start.xaml.g.cs
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.AssemblyInfoInputs.cache
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.AssemblyInfo.cs
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.csproj.CoreCompileInputs.cache
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.dll
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\ref\WordStudy.dll
+C:\Users\zheny\OneDrive\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.pdb
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\WordStudy.deps.json
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\WordStudy.dll
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\ref\WordStudy.dll
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\bin\Debug\netstandard2.0\WordStudy.pdb
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\Insert_Language.xaml.g.cs
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\Insert_Language_Translated.xaml.g.cs
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\ListWord_Look.xaml.g.cs
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\ListWorld.xaml.g.cs
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\ListWordMain.xaml.g.cs
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\MainPage.xaml.g.cs
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\Sattings.xaml.g.cs
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\Start.xaml.g.cs
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.AssemblyInfoInputs.cache
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.AssemblyInfo.cs
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.csproj.CoreCompileInputs.cache
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.dll
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\ref\WordStudy.dll
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.pdb
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\LayaoutAddLanguage\Add_Language.xaml.g.cs
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\LayaoutAddLanguage\Add_Language_Translated.xaml.g.cs
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\LayaoutListWord\ListWord_Look_Settings_True_Language.xaml.g.cs
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.csproj.AssemblyReference.cache

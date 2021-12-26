@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordStudy.Resources.layaout.ListWordMain"
+             BackgroundColor="#c8ffff">
+
+    <Frame CornerRadius="20"  
+       BorderColor="#4dbbfa"
+       BackgroundColor="#b0ffff"
+       HasShadow="True"
+       Margin="20 20 30 20">
+
+
+
+        <StackLayout Background="#b0ffff">
+
+
+
+            <Label Text="Слова" FontSize="40" HorizontalOptions="CenterAndExpand"  Margin="22 20 0 20" FontFamily="Times New Roman"/>
+
+
+            <Button x:Name="FraimWordInsert" Text="Добавить слова" CornerRadius="15" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1"  FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"  Padding="20 20 20 20"  Margin="50 0 20 0" Clicked="FraimWordInsert_"/>
+
+            <Button x:Name="FraimWordDelite" Text="Список слов" CornerRadius="15" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1"  FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Padding="20 39 20 39"  Margin="25 0 20 0" Clicked="FraimWordDelite_"/>
+
+            <Button x:Name="Static" Text="Статистика" CornerRadius="15" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1"  FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Padding="20 45 20 45"  Margin="25 0 20 0" Clicked="Static_"/>
+
+            <Button x:Name="Back" Text="Назад" CornerRadius="15" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="10 25 10 25"  FontSize="20" Margin="30 0 0 0" HorizontalOptions="CenterAndExpand"  VerticalOptions="Start" Clicked="Back_"/>
+
+        </StackLayout>
+
+
+    </Frame>
+
+</ContentPage>
