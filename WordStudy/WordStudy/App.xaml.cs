@@ -13,7 +13,6 @@ namespace WordStudy
         public const string DATABASE_NAME = "Words.db";
         public static Class_Words database;
 
-
         public const string DATABASE_NAME_Lang = "Lang.db";
         public static Class_Lang database_Lang;
 
@@ -22,6 +21,12 @@ namespace WordStudy
 
         public const string DATABASE_NAME_Settings = "Settings.db";
         public static Class_Settings database_Settings;
+
+        public const string DATABASE_NAME_Classification = "Classification.db";
+        public static Class_Classification database_Classification;
+
+        public const string DATABASE_NAME_Save_Settigs_for_Classification = "SSf_Classification_db.db";
+        public static Class_Save_Settigs_for_Classification database_SSf_Classification;
 
         public static Class_Words Database
         {
@@ -132,8 +137,33 @@ namespace WordStudy
             }
         }
 
+        public static Class_Classification Database_Classification
+        {
+            get
+            {
+                if (database_Classification == null)
+                {
+                    database_Classification = new Class_Classification(
+                        Path.Combine(
+                            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), DATABASE_NAME_Classification));
+                }
+                return database_Classification;
+            }
+        }
 
-
+        public static Class_Save_Settigs_for_Classification Database_SSf_Classification
+        {
+            get
+            {
+                if (database_SSf_Classification == null)
+                {
+                    database_SSf_Classification = new Class_Save_Settigs_for_Classification(
+                        Path.Combine(
+                            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), DATABASE_NAME_Save_Settigs_for_Classification));
+                }
+                return database_SSf_Classification;
+            }
+        }
 
         public App()
         {

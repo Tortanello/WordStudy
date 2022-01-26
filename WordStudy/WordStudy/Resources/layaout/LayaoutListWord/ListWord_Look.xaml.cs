@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using WordStudy.Resources.layaout.Word;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -25,15 +25,11 @@ namespace WordStudy.Resources.layaout.LayaoutListWord
         {
             await Navigation.PopModalAsync();
         }
-        protected async void ListLanguage (object sender, EventArgs e)
-        {
-            await Navigation.PopModalAsync();
-        }
 
-        protected void SwipeItem_Invoked_Del(object sender, EventArgs e)
+        protected async void SwipeItem_Invoked_Del(object sender, ItemTappedEventArgs e)
         {
-            int id = 5;
-            App.Database.DeleteItem(id);
+            
+            await Navigation.PushModalAsync(new Word_Modal(e));
         }
     }
 }

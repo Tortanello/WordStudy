@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wxNk+q/vCN6yLC48KiRcSo1Oc5qIL65ynM3RhT/wwR0WWLgVDDJTvE6Op0hJYWevNJdUqxonWzNgdHthLy1zUQ==",
+  "dgSpecHash": "1vPw+QX6ZqXVbI6iMEsWoEUCku+ojOVcz8hldAVVvncX+WvHIJFIThgoxPNe0izzteQ5mgEbUbIl1qUwRE+mSg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zheny\\Desktop\\Desktop\\Programming\\C#\\WordStudy\\WordStudy\\WordStudy.Android\\WordStudy.Android.csproj",
+  "projectFilePath": "C:\\Users\\zheny\\OneDrive\\Документы\\GitHub\\WordStudy\\WordStudy\\WordStudy.Android\\WordStudy.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zheny\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
     "C:\\Users\\zheny\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",

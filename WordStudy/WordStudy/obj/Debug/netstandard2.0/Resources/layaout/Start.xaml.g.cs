@@ -17,32 +17,40 @@ namespace WordStudy.Resources.layaout {
     public partial class Start : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Frame FraimWord;
+        private global::WordStudy.Resources.Custom.MyEntry MyEntry_Language;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Frame FraimWord_;
+        private global::WordStudy.Resources.Custom.MyEntry MyEntry_Language_translated;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Frame FraimWord__;
+        private global::WordStudy.Resources.Custom.MyEntry First_Letter;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Frame FraimWord___;
+        private global::WordStudy.Resources.Custom.MyEntry My_List;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Frame FraimWord____;
+        private global::WordStudy.Resources.Custom.MyEntry Save_Settings;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Frame FraimWord_____;
+        private global::Xamarin.Forms.Button Main_Button;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Button Back;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Button ListWord;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Start));
-            FraimWord = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "FraimWord");
-            FraimWord_ = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "FraimWord_");
-            FraimWord__ = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "FraimWord__");
-            FraimWord___ = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "FraimWord___");
-            FraimWord____ = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "FraimWord____");
-            FraimWord_____ = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "FraimWord_____");
+            MyEntry_Language = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::WordStudy.Resources.Custom.MyEntry>(this, "MyEntry_Language");
+            MyEntry_Language_translated = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::WordStudy.Resources.Custom.MyEntry>(this, "MyEntry_Language_translated");
+            First_Letter = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::WordStudy.Resources.Custom.MyEntry>(this, "First_Letter");
+            My_List = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::WordStudy.Resources.Custom.MyEntry>(this, "My_List");
+            Save_Settings = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::WordStudy.Resources.Custom.MyEntry>(this, "Save_Settings");
+            Main_Button = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "Main_Button");
+            Back = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "Back");
+            ListWord = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "ListWord");
         }
     }
 }

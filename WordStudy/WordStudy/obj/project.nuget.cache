@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UjW6FbDfbEXzK3UHHgTchI4Mmh2hnAM4DJYaor/XafBNJziCeu6hx1qG2MYDc7ptJQyFMsm6HlSyKuWBcfCuqQ==",
+  "dgSpecHash": "6iRcvHYOld2sHiKog7KTMVryO0hFobfuUe9xhx+2jp9kGu8PqfNfPrAnz5pw62E3VIyx5JiKhuzEq+tXox6kyg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zheny\\Desktop\\Desktop\\Programming\\C#\\WordStudy\\WordStudy\\WordStudy\\WordStudy.csproj",
+  "projectFilePath": "C:\\Users\\zheny\\OneDrive\\Документы\\GitHub\\WordStudy\\WordStudy\\WordStudy\\WordStudy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zheny\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\zheny\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

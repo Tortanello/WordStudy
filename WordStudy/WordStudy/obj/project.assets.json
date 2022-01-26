@@ -830,11 +830,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zheny\\Desktop\\Desktop\\Programming\\C#\\WordStudy\\WordStudy\\WordStudy\\WordStudy.csproj",
+      "projectUniqueName": "C:\\Users\\zheny\\OneDrive\\Документы\\GitHub\\WordStudy\\WordStudy\\WordStudy\\WordStudy.csproj",
       "projectName": "WordStudy",
-      "projectPath": "C:\\Users\\zheny\\Desktop\\Desktop\\Programming\\C#\\WordStudy\\WordStudy\\WordStudy\\WordStudy.csproj",
+      "projectPath": "C:\\Users\\zheny\\OneDrive\\Документы\\GitHub\\WordStudy\\WordStudy\\WordStudy\\WordStudy.csproj",
       "packagesPath": "C:\\Users\\zheny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zheny\\Desktop\\Desktop\\Programming\\C#\\WordStudy\\WordStudy\\WordStudy\\obj\\",
+      "outputPath": "C:\\Users\\zheny\\OneDrive\\Документы\\GitHub\\WordStudy\\WordStudy\\WordStudy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zheny\\AppData\\Roaming\\NuGet\\NuGet.Config",

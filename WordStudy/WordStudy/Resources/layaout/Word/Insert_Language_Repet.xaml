@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordStudy.Resources.layaout.Word.Insert_Language_Repet"
+             xmlns:local="clr-namespace:WordStudy.Resources.Custom"
+             BackgroundColor="#c8ffff">
+    <Frame CornerRadius="20"  
+       BorderColor="#4dbbfa"
+       BackgroundColor="#b0ffff"
+       HasShadow="True"
+       Margin="20 20 30 20">
+
+        <StackLayout Background="#b0ffff">
+
+            <Label Text="Выбор языка слов" FontSize="25" HorizontalOptions="CenterAndExpand"  Margin="22 20 20 30" FontFamily="Times New Roman"/>
+
+            <ListView x:Name="WordList" ItemsSource="{Binding}" ItemTapped="ListLanguage" SeparatorColor="#4dbbfa">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:Name="DT">
+                        <local:CustomViewCell SelectedItemBackgroundColor="#c8ffff">
+                            <ViewCell.View x:Name="VCV">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label x:Name="Language" Text="{Binding Language}" FontSize="Large" />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </local:CustomViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="Back" Text="Назад" FontAttributes="Bold" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 42 2 42"  FontSize="12" Margin="10 0 0 0" HorizontalOptions="Start"  VerticalOptions="Start" Clicked="Back_" />
+
+            <Button x:Name="ListWord" Text="Добавить язык" FontAttributes="Bold" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 8 2 8"  FontSize="12" Margin="-54 0 10 0" HorizontalOptions="EndAndExpand"  VerticalOptions="Start" Clicked="Input_Language" />
+        </StackLayout>
+    </Frame>
+</ContentPage>

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WordStudy.Resources.BaseData;
 using WordStudy.Resources.layaout.LayaoutListWord;
+using WordStudy.Resources.layaout.LayaoutListWord.statistics;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -69,16 +70,7 @@ namespace WordStudy.Resources.layaout
         }*/
         private async void Static_(object sender, EventArgs e)
         {
-            /*await Static.ScaleTo(0.8, 30);
-            await Static.ScaleTo(1, 10);*/
-
-            // Cretcha nummue db and  ListWord
-            Words_db words_Db = new Words_db();
-            ListWorld listWordPage = new ListWorld();
-
-            listWordPage.BindingContext = words_Db;
-
-            await Navigation.PushModalAsync(listWordPage);
+            await Navigation.PushModalAsync(new Statistics_Main());
         }
         private async void Back_(object sender, EventArgs e)
         {

@@ -16,5 +16,9 @@ namespace WordStudy.Resources.BaseData
         public string De_Activetion_Transcription { get; set; }
 
         public string De_Activetion_Language { get; set; }
+
+        public string De_Activetion_Translated { get; set; }
+
+        public string Like_Language { get; set; }
     }
 }

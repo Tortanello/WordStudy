@@ -35,6 +35,11 @@ namespace WordStudy.Resources.layaout
             settings_T.ID = 1;
             settings_T.De_Activetion_Transcription = value_s;
             settings_T.First_Word_Is_Big_Lettar = state.First_Word_Is_Big_Lettar;
+
+            settings_T.De_Activetion_Language = state.De_Activetion_Language;
+
+            settings_T.Like_Language = state.Like_Language;
+            settings_T.De_Activetion_Translated = state.De_Activetion_Translated;
             App.Database_Settins.Update_Settings(settings_T);
         }
 
@@ -55,6 +60,11 @@ namespace WordStudy.Resources.layaout
             settings_F.ID = 1;
             settings_F.First_Word_Is_Big_Lettar = value_s;
             settings_F.De_Activetion_Transcription = state.De_Activetion_Transcription;
+
+            settings_F.De_Activetion_Language = state.De_Activetion_Language;
+
+            settings_F.Like_Language = state.Like_Language;
+            settings_F.De_Activetion_Translated = state.De_Activetion_Translated;
             App.Database_Settins.Update_Settings(settings_F);
             if (value_s == "True")
             {
@@ -150,27 +160,28 @@ namespace WordStudy.Resources.layaout
                 }
 
                 // str
-
-                char[] char_t = translated_.ToCharArray();
-
-                string string_down_t;
-                for (int k = 0; k < char_t.Length; k++)
+                if (translated_ != null)
                 {
-                    string_down_t = char_t[k].ToString().ToLower();
-                    char_t[k] = string_down_t.ToCharArray().First();
+                
+                    char[] char_t = translated_.ToCharArray();
+
+                    string string_down_t;
+                    for (int k = 0; k < char_t.Length; k++)
+                    {
+                        string_down_t = char_t[k].ToString().ToLower();
+                        char_t[k] = string_down_t.ToCharArray().First();
+                    }
+
+                    string str_t = "";
+                    for (int a = 0; a < char_t.Length; a++)
+                    {
+                        str_t += char_t[a].ToString();
+                    }
+
+                    // str_t
+                    date.ElementAt(i).Translated = str_t;
                 }
-
-                string str_t = "";
-                for (int a = 0; a < char_t.Length; a++)
-                {
-                    str_t += char_t[a].ToString();
-                }
-
-                // str_t
-
                 date.ElementAt(i).Word = str;
-
-                date.ElementAt(i).Translated = str_t;
 
                 App.Database.Update_sattings(date.ElementAt(i));
             }
@@ -195,9 +206,59 @@ namespace WordStudy.Resources.layaout
             settings_T.De_Activetion_Transcription = state.De_Activetion_Transcription;
             settings_T.First_Word_Is_Big_Lettar = state.First_Word_Is_Big_Lettar;
             settings_T.De_Activetion_Language = value_s;
+
+            settings_T.Like_Language = state.Like_Language;
+            settings_T.De_Activetion_Translated = state.De_Activetion_Translated;
+           App.Database_Settins.Update_Settings(settings_T);
+        }
+
+        private void De_Activetion_Translated_Toggled(object sender, ToggledEventArgs e)
+        {
+            var state = App.Database_Settins.GetItem(1);
+            string value_s;
+            bool value = e.Value;
+            if (value == true)
+            {
+                value_s = "True";
+            }
+            else
+            {
+                value_s = "False";
+            }
+            Settings_db settings_T = new Settings_db();
+            settings_T.ID = 1;
+            settings_T.De_Activetion_Transcription = state.De_Activetion_Transcription;
+            settings_T.First_Word_Is_Big_Lettar = state.First_Word_Is_Big_Lettar;
+            settings_T.De_Activetion_Language = state.De_Activetion_Language;
+
+            settings_T.Like_Language = state.Like_Language;
+            settings_T.De_Activetion_Translated = value_s;
             App.Database_Settins.Update_Settings(settings_T);
         }
 
+        private void Switch_Like_Language_Toggled(object sender, ToggledEventArgs e)
+        {
+            var state = App.Database_Settins.GetItem(1);
+            string value_s;
+            bool value = e.Value;
+            if (value == true)
+            {
+                value_s = "True";
+            }
+            else
+            {
+                value_s = "False";
+            }
+            Settings_db settings_T = new Settings_db();
+            settings_T.ID = 1;
+            settings_T.De_Activetion_Transcription = state.De_Activetion_Transcription;
+            settings_T.First_Word_Is_Big_Lettar = state.First_Word_Is_Big_Lettar;
+            settings_T.De_Activetion_Language = state.De_Activetion_Language;
+
+            settings_T.Like_Language = value_s;
+            settings_T.De_Activetion_Translated = state.De_Activetion_Translated;
+            App.Database_Settins.Update_Settings(settings_T);
+        }
 
         /*async private void Button_Clicked(object sender, EventArgs e)
         {
@@ -235,6 +296,24 @@ namespace WordStudy.Resources.layaout
             else if (state.De_Activetion_Language == "False")
             {
                 Switch_De_Activetion_Language.IsToggled = false;
+            }
+
+            if (state.De_Activetion_Translated == "True")
+            {
+                Switch_De_Activetion_Translated.IsToggled = true;
+            }
+            else if (state.De_Activetion_Translated == "False")
+            {
+                Switch_De_Activetion_Translated.IsToggled = false;
+            }
+
+            if (state.Like_Language == "True")
+            {
+                Switch_Like_Language.IsToggled = true;
+            }
+            else if (state.Like_Language == "False")
+            {
+                Switch_Like_Language.IsToggled = false;
             }
 
             base.OnAppearing();

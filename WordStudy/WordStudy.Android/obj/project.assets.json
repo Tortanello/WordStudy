@@ -2381,11 +2381,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zheny\\Desktop\\Desktop\\Programming\\C#\\WordStudy\\WordStudy\\WordStudy.Android\\WordStudy.Android.csproj",
+      "projectUniqueName": "C:\\Users\\zheny\\OneDrive\\Документы\\GitHub\\WordStudy\\WordStudy\\WordStudy.Android\\WordStudy.Android.csproj",
       "projectName": "WordStudy.Android",
-      "projectPath": "C:\\Users\\zheny\\Desktop\\Desktop\\Programming\\C#\\WordStudy\\WordStudy\\WordStudy.Android\\WordStudy.Android.csproj",
+      "projectPath": "C:\\Users\\zheny\\OneDrive\\Документы\\GitHub\\WordStudy\\WordStudy\\WordStudy.Android\\WordStudy.Android.csproj",
       "packagesPath": "C:\\Users\\zheny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zheny\\Desktop\\Desktop\\Programming\\C#\\WordStudy\\WordStudy\\WordStudy.Android\\obj\\",
+      "outputPath": "C:\\Users\\zheny\\OneDrive\\Документы\\GitHub\\WordStudy\\WordStudy\\WordStudy.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -2402,8 +2402,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\zheny\\Desktop\\Desktop\\Programming\\C#\\WordStudy\\WordStudy\\WordStudy\\WordStudy.csproj": {
-              "projectPath": "C:\\Users\\zheny\\Desktop\\Desktop\\Programming\\C#\\WordStudy\\WordStudy\\WordStudy\\WordStudy.csproj"
+            "C:\\Users\\zheny\\OneDrive\\Документы\\GitHub\\WordStudy\\WordStudy\\WordStudy\\WordStudy.csproj": {
+              "projectPath": "C:\\Users\\zheny\\OneDrive\\Документы\\GitHub\\WordStudy\\WordStudy\\WordStudy\\WordStudy.csproj"
             }
           }
         }

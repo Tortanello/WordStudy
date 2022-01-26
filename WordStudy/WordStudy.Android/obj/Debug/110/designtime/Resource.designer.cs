@@ -243,10 +243,6 @@ namespace WordStudy.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_out = global::WordStudy.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_in = global::WordStudy.Droid.Resource.Animation.design_snackbar_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_out = global::WordStudy.Droid.Resource.Animation.design_snackbar_out;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromLeft = global::WordStudy.Droid.Resource.Animation.EnterFromLeft;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromRight = global::WordStudy.Droid.Resource.Animation.EnterFromRight;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToLeft = global::WordStudy.Droid.Resource.Animation.ExitToLeft;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToRight = global::WordStudy.Droid.Resource.Animation.ExitToRight;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.fragment_close_enter = global::WordStudy.Droid.Resource.Animation.fragment_close_enter;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.fragment_close_exit = global::WordStudy.Droid.Resource.Animation.fragment_close_exit;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.fragment_fade_enter = global::WordStudy.Droid.Resource.Animation.fragment_fade_enter;
@@ -1990,7 +1986,6 @@ namespace WordStudy.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_search_view = global::WordStudy.Droid.Resource.Layout.abc_search_view;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_select_dialog_material = global::WordStudy.Droid.Resource.Layout.abc_select_dialog_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_tooltip = global::WordStudy.Droid.Resource.Layout.abc_tooltip;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.BottomTabLayout = global::WordStudy.Droid.Resource.Layout.BottomTabLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.custom_dialog = global::WordStudy.Droid.Resource.Layout.custom_dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_navigation_item = global::WordStudy.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_sheet_dialog = global::WordStudy.Droid.Resource.Layout.design_bottom_sheet_dialog;
@@ -2007,9 +2002,6 @@ namespace WordStudy.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu_item = global::WordStudy.Droid.Resource.Layout.design_navigation_menu_item;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_text_input_end_icon = global::WordStudy.Droid.Resource.Layout.design_text_input_end_icon;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_text_input_start_icon = global::WordStudy.Droid.Resource.Layout.design_text_input_start_icon;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.FallbackTabbarDoNotUse = global::WordStudy.Droid.Resource.Layout.FallbackTabbarDoNotUse;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.FallbackToolbarDoNotUse = global::WordStudy.Droid.Resource.Layout.FallbackToolbarDoNotUse;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.FlyoutContent = global::WordStudy.Droid.Resource.Layout.FlyoutContent;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.mtrl_alert_dialog = global::WordStudy.Droid.Resource.Layout.mtrl_alert_dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.mtrl_alert_dialog_actions = global::WordStudy.Droid.Resource.Layout.mtrl_alert_dialog_actions;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.mtrl_alert_dialog_title = global::WordStudy.Droid.Resource.Layout.mtrl_alert_dialog_title;
@@ -2053,13 +2045,10 @@ namespace WordStudy.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_media_custom = global::WordStudy.Droid.Resource.Layout.notification_template_media_custom;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_chronometer = global::WordStudy.Droid.Resource.Layout.notification_template_part_chronometer;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_time = global::WordStudy.Droid.Resource.Layout.notification_template_part_time;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.RootLayout = global::WordStudy.Droid.Resource.Layout.RootLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_item_material = global::WordStudy.Droid.Resource.Layout.select_dialog_item_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_multichoice_material = global::WordStudy.Droid.Resource.Layout.select_dialog_multichoice_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_singlechoice_material = global::WordStudy.Droid.Resource.Layout.select_dialog_singlechoice_material;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.ShellContent = global::WordStudy.Droid.Resource.Layout.ShellContent;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::WordStudy.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.Tabbar = global::WordStudy.Droid.Resource.Layout.Tabbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.test_action_chip = global::WordStudy.Droid.Resource.Layout.test_action_chip;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.test_chip_zero_corner_radius = global::WordStudy.Droid.Resource.Layout.test_chip_zero_corner_radius;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.test_design_checkbox = global::WordStudy.Droid.Resource.Layout.test_design_checkbox;
@@ -2074,7 +2063,6 @@ namespace WordStudy.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.text_view_with_line_height_from_layout = global::WordStudy.Droid.Resource.Layout.text_view_with_line_height_from_layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.text_view_with_line_height_from_style = global::WordStudy.Droid.Resource.Layout.text_view_with_line_height_from_style;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.text_view_with_theme_line_height = global::WordStudy.Droid.Resource.Layout.text_view_with_theme_line_height;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.Toolbar = global::WordStudy.Droid.Resource.Layout.Toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Plurals.mtrl_badge_content_description = global::WordStudy.Droid.Resource.Plurals.mtrl_badge_content_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_home_description = global::WordStudy.Droid.Resource.String.abc_action_bar_home_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_up_description = global::WordStudy.Droid.Resource.String.abc_action_bar_up_description;
@@ -3868,10 +3856,6 @@ namespace WordStudy.Droid
 			global::Xamarin.Forms.Platform.Resource.Animation.design_bottom_sheet_slide_out = global::WordStudy.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Xamarin.Forms.Platform.Resource.Animation.design_snackbar_in = global::WordStudy.Droid.Resource.Animation.design_snackbar_in;
 			global::Xamarin.Forms.Platform.Resource.Animation.design_snackbar_out = global::WordStudy.Droid.Resource.Animation.design_snackbar_out;
-			global::Xamarin.Forms.Platform.Resource.Animation.EnterFromLeft = global::WordStudy.Droid.Resource.Animation.EnterFromLeft;
-			global::Xamarin.Forms.Platform.Resource.Animation.EnterFromRight = global::WordStudy.Droid.Resource.Animation.EnterFromRight;
-			global::Xamarin.Forms.Platform.Resource.Animation.ExitToLeft = global::WordStudy.Droid.Resource.Animation.ExitToLeft;
-			global::Xamarin.Forms.Platform.Resource.Animation.ExitToRight = global::WordStudy.Droid.Resource.Animation.ExitToRight;
 			global::Xamarin.Forms.Platform.Resource.Animation.fragment_close_enter = global::WordStudy.Droid.Resource.Animation.fragment_close_enter;
 			global::Xamarin.Forms.Platform.Resource.Animation.fragment_close_exit = global::WordStudy.Droid.Resource.Animation.fragment_close_exit;
 			global::Xamarin.Forms.Platform.Resource.Animation.fragment_fade_enter = global::WordStudy.Droid.Resource.Animation.fragment_fade_enter;
@@ -5615,7 +5599,6 @@ namespace WordStudy.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.abc_search_view = global::WordStudy.Droid.Resource.Layout.abc_search_view;
 			global::Xamarin.Forms.Platform.Resource.Layout.abc_select_dialog_material = global::WordStudy.Droid.Resource.Layout.abc_select_dialog_material;
 			global::Xamarin.Forms.Platform.Resource.Layout.abc_tooltip = global::WordStudy.Droid.Resource.Layout.abc_tooltip;
-			global::Xamarin.Forms.Platform.Resource.Layout.BottomTabLayout = global::WordStudy.Droid.Resource.Layout.BottomTabLayout;
 			global::Xamarin.Forms.Platform.Resource.Layout.custom_dialog = global::WordStudy.Droid.Resource.Layout.custom_dialog;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_bottom_navigation_item = global::WordStudy.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_bottom_sheet_dialog = global::WordStudy.Droid.Resource.Layout.design_bottom_sheet_dialog;
@@ -5632,9 +5615,6 @@ namespace WordStudy.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_menu_item = global::WordStudy.Droid.Resource.Layout.design_navigation_menu_item;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_text_input_end_icon = global::WordStudy.Droid.Resource.Layout.design_text_input_end_icon;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_text_input_start_icon = global::WordStudy.Droid.Resource.Layout.design_text_input_start_icon;
-			global::Xamarin.Forms.Platform.Resource.Layout.FallbackTabbarDoNotUse = global::WordStudy.Droid.Resource.Layout.FallbackTabbarDoNotUse;
-			global::Xamarin.Forms.Platform.Resource.Layout.FallbackToolbarDoNotUse = global::WordStudy.Droid.Resource.Layout.FallbackToolbarDoNotUse;
-			global::Xamarin.Forms.Platform.Resource.Layout.FlyoutContent = global::WordStudy.Droid.Resource.Layout.FlyoutContent;
 			global::Xamarin.Forms.Platform.Resource.Layout.mtrl_alert_dialog = global::WordStudy.Droid.Resource.Layout.mtrl_alert_dialog;
 			global::Xamarin.Forms.Platform.Resource.Layout.mtrl_alert_dialog_actions = global::WordStudy.Droid.Resource.Layout.mtrl_alert_dialog_actions;
 			global::Xamarin.Forms.Platform.Resource.Layout.mtrl_alert_dialog_title = global::WordStudy.Droid.Resource.Layout.mtrl_alert_dialog_title;
@@ -5678,13 +5658,10 @@ namespace WordStudy.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.notification_template_media_custom = global::WordStudy.Droid.Resource.Layout.notification_template_media_custom;
 			global::Xamarin.Forms.Platform.Resource.Layout.notification_template_part_chronometer = global::WordStudy.Droid.Resource.Layout.notification_template_part_chronometer;
 			global::Xamarin.Forms.Platform.Resource.Layout.notification_template_part_time = global::WordStudy.Droid.Resource.Layout.notification_template_part_time;
-			global::Xamarin.Forms.Platform.Resource.Layout.RootLayout = global::WordStudy.Droid.Resource.Layout.RootLayout;
 			global::Xamarin.Forms.Platform.Resource.Layout.select_dialog_item_material = global::WordStudy.Droid.Resource.Layout.select_dialog_item_material;
 			global::Xamarin.Forms.Platform.Resource.Layout.select_dialog_multichoice_material = global::WordStudy.Droid.Resource.Layout.select_dialog_multichoice_material;
 			global::Xamarin.Forms.Platform.Resource.Layout.select_dialog_singlechoice_material = global::WordStudy.Droid.Resource.Layout.select_dialog_singlechoice_material;
-			global::Xamarin.Forms.Platform.Resource.Layout.ShellContent = global::WordStudy.Droid.Resource.Layout.ShellContent;
 			global::Xamarin.Forms.Platform.Resource.Layout.support_simple_spinner_dropdown_item = global::WordStudy.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::Xamarin.Forms.Platform.Resource.Layout.Tabbar = global::WordStudy.Droid.Resource.Layout.Tabbar;
 			global::Xamarin.Forms.Platform.Resource.Layout.test_action_chip = global::WordStudy.Droid.Resource.Layout.test_action_chip;
 			global::Xamarin.Forms.Platform.Resource.Layout.test_chip_zero_corner_radius = global::WordStudy.Droid.Resource.Layout.test_chip_zero_corner_radius;
 			global::Xamarin.Forms.Platform.Resource.Layout.test_design_checkbox = global::WordStudy.Droid.Resource.Layout.test_design_checkbox;
@@ -5699,7 +5676,6 @@ namespace WordStudy.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.text_view_with_line_height_from_layout = global::WordStudy.Droid.Resource.Layout.text_view_with_line_height_from_layout;
 			global::Xamarin.Forms.Platform.Resource.Layout.text_view_with_line_height_from_style = global::WordStudy.Droid.Resource.Layout.text_view_with_line_height_from_style;
 			global::Xamarin.Forms.Platform.Resource.Layout.text_view_with_theme_line_height = global::WordStudy.Droid.Resource.Layout.text_view_with_theme_line_height;
-			global::Xamarin.Forms.Platform.Resource.Layout.Toolbar = global::WordStudy.Droid.Resource.Layout.Toolbar;
 			global::Xamarin.Forms.Platform.Resource.Plurals.mtrl_badge_content_description = global::WordStudy.Droid.Resource.Plurals.mtrl_badge_content_description;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_home_description = global::WordStudy.Droid.Resource.String.abc_action_bar_home_description;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_up_description = global::WordStudy.Droid.Resource.String.abc_action_bar_up_description;
@@ -7555,16 +7531,16 @@ namespace WordStudy.Droid
 			public const int design_snackbar_out = 2130771995;
 			
 			// aapt resource value: 0x7F01001C
-			public const int EnterFromLeft = 2130771996;
+			public const int enterfromleft = 2130771996;
 			
 			// aapt resource value: 0x7F01001D
-			public const int EnterFromRight = 2130771997;
+			public const int enterfromright = 2130771997;
 			
 			// aapt resource value: 0x7F01001E
-			public const int ExitToLeft = 2130771998;
+			public const int exittoleft = 2130771998;
 			
 			// aapt resource value: 0x7F01001F
-			public const int ExitToRight = 2130771999;
+			public const int exittoright = 2130771999;
 			
 			// aapt resource value: 0x7F010020
 			public const int fragment_close_enter = 2130772000;
@@ -13004,7 +12980,7 @@ namespace WordStudy.Droid
 			public const int abc_tooltip = 2131427355;
 			
 			// aapt resource value: 0x7F0B001C
-			public const int BottomTabLayout = 2131427356;
+			public const int bottomtablayout = 2131427356;
 			
 			// aapt resource value: 0x7F0B001D
 			public const int browser_actions_context_menu_page = 2131427357;
@@ -13061,13 +13037,13 @@ namespace WordStudy.Droid
 			public const int design_text_input_start_icon = 2131427374;
 			
 			// aapt resource value: 0x7F0B002F
-			public const int FallbackTabbarDoNotUse = 2131427375;
+			public const int fallbacktabbardonotuse = 2131427375;
 			
 			// aapt resource value: 0x7F0B0030
-			public const int FallbackToolbarDoNotUse = 2131427376;
+			public const int fallbacktoolbardonotuse = 2131427376;
 			
 			// aapt resource value: 0x7F0B0031
-			public const int FlyoutContent = 2131427377;
+			public const int flyoutcontent = 2131427377;
 			
 			// aapt resource value: 0x7F0B0032
 			public const int mtrl_alert_dialog = 2131427378;
@@ -13199,7 +13175,7 @@ namespace WordStudy.Droid
 			public const int notification_template_part_time = 2131427420;
 			
 			// aapt resource value: 0x7F0B005D
-			public const int RootLayout = 2131427421;
+			public const int rootlayout = 2131427421;
 			
 			// aapt resource value: 0x7F0B005E
 			public const int select_dialog_item_material = 2131427422;
@@ -13211,13 +13187,13 @@ namespace WordStudy.Droid
 			public const int select_dialog_singlechoice_material = 2131427424;
 			
 			// aapt resource value: 0x7F0B0061
-			public const int ShellContent = 2131427425;
+			public const int shellcontent = 2131427425;
 			
 			// aapt resource value: 0x7F0B0062
 			public const int support_simple_spinner_dropdown_item = 2131427426;
 			
 			// aapt resource value: 0x7F0B0063
-			public const int Tabbar = 2131427427;
+			public const int tabbar = 2131427427;
 			
 			// aapt resource value: 0x7F0B0064
 			public const int test_action_chip = 2131427428;
@@ -13262,7 +13238,7 @@ namespace WordStudy.Droid
 			public const int text_view_with_theme_line_height = 2131427440;
 			
 			// aapt resource value: 0x7F0B0072
-			public const int Toolbar = 2131427442;
+			public const int toolbar = 2131427442;
 			
 			static Layout()
 			{

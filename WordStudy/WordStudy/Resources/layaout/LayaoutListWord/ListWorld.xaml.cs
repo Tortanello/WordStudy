@@ -24,60 +24,53 @@ namespace WordStudy.Resources.layaout.LayaoutListWord
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            //var friend = (Words_db)BindingContext;
-            // //Console.WriteLine(BindingContext);
             var word_db = (Words_db)BindingContext;
-            if (!String.IsNullOrEmpty(word_db.Word))
+            // Должно работать при отключенной настройки "Разрешать одинаковый Language"
+            if (App.Database_Settins.GetItem(1).Like_Language == "False")
             {
-                if (!String.IsNullOrEmpty(word_db.Translated))
+                // Настройка лайк так же и обрабатывает то что нельзя вводить слово Language 
+                if (MyEntry_Language.Text == "Language" && MyEntry_Language_translated.Text == "Language")
                 {
-                    translated.Placeholder = "Tranlated";
-                    word.Placeholder = "Word";
-                    // Проблема в том что слово не может пройти все циклы фо, теперь всё решено !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                    App.Database.input_World(word_db);
+                    MyEntry_Language.Text = "ERROR";
+                    MyEntry_Language_translated.Text = "ERROR";
+                    return;
                 }
-                // critcha alert about error input
-                else
+
+                if (MyEntry_Language.Text == "Language")
                 {
-                    word.Placeholder = "Word";
-                    translated.Placeholder = "NULL";
+                    MyEntry_Language.Text = "ERROR";
+                    return;
+                }
+
+                if (MyEntry_Language_translated.Text == "Language")
+                {
+                    MyEntry_Language_translated.Text = "ERROR";
+                    return;
                 }
             }
-            // critcha alert about error input
-            else
+
+            // Проверка на то что есть ли что то в Word
+            if (String.IsNullOrEmpty(word_db.Word))
             {
                 word.Placeholder = "NULL";
-                if (String.IsNullOrEmpty(word_db.Translated))
-                {
-                    translated.Placeholder = "NULL";
-                }
-                else
-                {
-                    translated.Placeholder = "Translated";
-                }
+                return;
             }
 
-            if (MyEntry_Language.Text == "Language")
+            // Проверка Translated
+            if (App.Database_Settins.GetItem(1).De_Activetion_Translated == "True" && !String.IsNullOrEmpty(word_db.Translated))
             {
-                MyEntry_Language.Text = "ERROR";
-                if (MyEntry_Language.Text == "ERROR")
-                {
-                    return;
-                }
-                // return;
+                App.Database.input_World(word_db);
             }
-
-            if (MyEntry_Language_translated.Text == "Language")
+            else if (App.Database_Settins.GetItem(1).De_Activetion_Translated == "True" && String.IsNullOrEmpty(word_db.Translated))
             {
-                MyEntry_Language_translated.Text = "ERROR";
-                if (MyEntry_Language_translated.Text == "ERROR")
-                {
-                    return;
-                }
-                // return;
+                translated.Placeholder = "NULL";
+            }
+            else if (App.Database_Settins.GetItem(1).De_Activetion_Translated == "False")
+            {
+                App.Database.input_World(word_db);
             }
 
-            // App.Database.input_World(word_db);
+            // Првоерка Transcription не требуется так как не является обязательным вводом при любых настройках
         }
         async private void Back_(object sender, EventArgs e)
         {
@@ -115,13 +108,7 @@ namespace WordStudy.Resources.layaout.LayaoutListWord
 
         private void if_db()
         {
-            if (App.Database_Settins.GetItem(1).De_Activetion_Transcription == "False")
-            {
-                transcription.IsReadOnly = true;
-                translated.Completed += MyEntry_Completed;
-                translated.ReturnType = default;
-            }
-
+            bool completed = false;
             if (App.Database_Settins.GetItem(1).First_Word_Is_Big_Lettar == "False")
             {
                 word.Keyboard = default;
@@ -131,6 +118,43 @@ namespace WordStudy.Resources.layaout.LayaoutListWord
                 word.Placeholder = "word";
                 translated.Placeholder = "translated";
                 transcription.Placeholder = "transcription";
+            }
+
+            if (App.Database_Settins.GetItem(1).De_Activetion_Transcription == "True" && App.Database_Settins.GetItem(1).De_Activetion_Translated == "True")
+            {
+                transcription.Completed += MyEntry_Completed;
+            }
+
+            // transcription не работает --> отработывает translated
+            if (App.Database_Settins.GetItem(1).De_Activetion_Transcription == "False")
+            {
+                transcription.IsReadOnly = true;
+                translated.Completed += MyEntry_Completed;
+                translated.ReturnType = default;
+                transcription.Placeholder = "";
+                completed = true;
+            }
+
+
+            // translated не работает  -->отработывает transcription
+            if (App.Database_Settins.GetItem(1).De_Activetion_Translated == "False")
+            {
+                // Если 2 поля не работают --> отработывает word
+                if (completed == true)
+                {
+                    translated.IsReadOnly = true;
+                    word.Completed += MyEntry_Completed;
+                    word.ReturnType = default;
+                    translated.Completed -= MyEntry_Completed;
+                }
+                else
+                {
+                    translated.IsReadOnly = true;
+                    transcription.Completed += MyEntry_Completed;
+                    transcription.ReturnType = default;
+                }
+                translated.Placeholder = "";
+
             }
         }
 
@@ -160,3 +184,64 @@ namespace WordStudy.Resources.layaout.LayaoutListWord
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*if (!String.IsNullOrEmpty(word_db.Word) && )
+            {
+                if (!String.IsNullOrEmpty(word_db.Translated))
+                {
+                    App.Database.input_World(word_db);
+                }
+                // critcha alert about error input
+                else
+                {
+                    word.Placeholder = "Word";
+                    translated.Placeholder = "NULL";
+                }
+            }
+            // critcha alert about error input
+            else
+            {
+                word.Placeholder = "NULL";
+                if (String.IsNullOrEmpty(word_db.Translated))
+                {
+                    translated.Placeholder = "NULL";
+                }
+                else
+                {
+                    translated.Placeholder = "Translated";
+                }
+            }*/

@@ -20,7 +20,17 @@
                 <!--Label Text="First word is big letter" FontSize="15" FontAttributes="Bold" Grid.Column="1"/-->
                 <Label Text="Все слова с большой буквы" FontSize="15" FontAttributes="Bold" Grid.Column="1"/>
             </Grid>
-
+            
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="45" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Switch x:Name="Switch_De_Activetion_Translated" IsToggled="true" HorizontalOptions="Start" Grid.Column="0" Toggled="De_Activetion_Translated_Toggled"/>
+                <!--Label Text="First word is big letter" FontSize="15" FontAttributes="Bold" Grid.Column="1"/-->
+                <Label Text="Включить поле Translated" FontSize="15" FontAttributes="Bold" Grid.Column="1"/>
+            </Grid>
+            
             <Grid ColumnSpacing="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="45" />
@@ -30,7 +40,17 @@
                 <!--Label Text="First word is big letter" FontSize="15" FontAttributes="Bold" Grid.Column="1"/-->
                 <Label Text="Включить поле Transcription" FontSize="15" FontAttributes="Bold" Grid.Column="1"/>
             </Grid>
-
+            
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="45" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Switch x:Name="Switch_Like_Language" IsToggled="true" HorizontalOptions="Start" Grid.Column="0" Toggled="Switch_Like_Language_Toggled"/>
+                <!--Label Text="First word is big letter" FontSize="15" FontAttributes="Bold" Grid.Column="1"/-->
+                <Label Text="Разрешать одинаковый Language" FontSize="15" FontAttributes="Bold" Grid.Column="1"/>
+            </Grid>
+            
             <Grid ColumnSpacing="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="45" />
@@ -38,8 +58,30 @@
                 </Grid.ColumnDefinitions>
                 <Switch x:Name="Switch_De_Activetion_Language" IsToggled="true" HorizontalOptions="Start" Grid.Column="0" Toggled="Switch_De_Activetion_Language_"/>
                 <!--Label Text="First word is big letter" FontSize="15" FontAttributes="Bold" Grid.Column="1"/-->
-                <Label Text="Убрать Language из списка слов" FontSize="15" FontAttributes="Bold" Grid.Column="1"/>
+                <Label Text="Убрать поле Language из списка слов" FontSize="15" FontAttributes="Bold" Grid.Column="1"/>
             </Grid>
+
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="45" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Switch x:Name="Switch_De_Activetion_Language____" IsToggled="true" HorizontalOptions="Start" Grid.Column="0" Toggled="Switch_De_Activetion_Language_"/>
+                <!--Label Text="First word is big letter" FontSize="15" FontAttributes="Bold" Grid.Column="1"/-->
+                <Label Text="Включить групировку слов по Алфавиту" FontSize="15" FontAttributes="Bold" Grid.Column="1"/>
+            </Grid>
+
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="45" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Switch x:Name="Switch_De_Activetion_Langua" IsToggled="true" HorizontalOptions="Start" Grid.Column="0" Toggled="Switch_De_Activetion_Language_"/>
+                <!--Label Text="First word is big letter" FontSize="15" FontAttributes="Bold" Grid.Column="1"/-->
+                <Label Text="Развернуть группировку слов назад (не 1-10, а 10-1)" FontSize="15" FontAttributes="Bold" Grid.Column="1"/>
+            </Grid>
+
+
             <Button x:Name="Back" Text="Назад" FontAttributes="None" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="0"  FontSize="Medium" Margin="10 0 0 0" HorizontalOptions="Fill"  VerticalOptions="EndAndExpand" Clicked="Back_" />
         </StackLayout>
     </Frame>

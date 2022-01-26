@@ -11,10 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Resources\layaout\Word\Insert_Language_Repet.xaml.cs" />
+    <Compile Remove="Resources\layaout\Word\Insert_Language_Translated_Repet.xaml.cs" />
     <Compile Remove="Resources\ListWordMain.xaml.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="Resources\layaout\Word\Insert_Language_Repet.xaml" />
+    <EmbeddedResource Remove="Resources\layaout\Word\Insert_Language_Translated_Repet.xaml" />
     <EmbeddedResource Remove="Resources\ListWordMain.xaml" />
   </ItemGroup>
 
@@ -38,6 +42,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Resources\layaout\LayaoutListWord\LayaoutListWord\Choice_My_List.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\layaout\LayaoutListWord\Insert_Language.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -59,6 +66,12 @@
     <EmbeddedResource Update="Resources\layaout\LayaoutListWord\ListWorld.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resources\layaout\LayaoutListWord\SSf_C_Completed\SSf_C_Completed.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\layaout\LayaoutListWord\statistics\Statistics_Main.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\layaout\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -66,6 +79,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\layaout\Start.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\layaout\Word\Word_Modal.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

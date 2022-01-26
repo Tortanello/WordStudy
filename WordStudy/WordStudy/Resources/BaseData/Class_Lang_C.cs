@@ -15,12 +15,49 @@ namespace WordStudy.Resources.BaseData
             // database_Lang_C.CreateTable<Language_Choice_db>();
         }
 
+        // Нужен для обновления языка в словах
+        /*public int update_Lang_for_repet(Language_Choice_db item)
+        {
+            if (item.Language_Translated_Choice == null)
+            {
+                var item_date = database_Lang_C.Table<Language_Choice_db>().ToList().First();
+                var item_date_C = item_date.Language_Translated_Choice;
+                item.Language_Translated_Choice = item_date_C;
+
+                Language_Choice_db class_Lang_C = new Language_Choice_db();
+                class_Lang_C.Id = item.Id;
+                class_Lang_C.Language_Choice = item.Language_Choice;
+                class_Lang_C.Language_Translated_Choice = item.Language_Translated_Choice;
+                return database_Lang_C.Update(class_Lang_C);
+            }
+            else
+            {
+                var item_date = database_Lang_C.Table<Language_Choice_db>().ToList().First();
+                var item_date_C = item_date.Language_Choice;
+                item.Language_Choice = item_date_C;
+
+                Language_Choice_db class_Lang_C = new Language_Choice_db();
+                class_Lang_C.Id = item.Id;
+                class_Lang_C.Language_Choice = item.Language_Choice;
+                class_Lang_C.Language_Translated_Choice = item.Language_Translated_Choice;
+                return database_Lang_C.Update(class_Lang_C);
+            }
+        }*/
+
         // Input Language
 
         public int input_Lang_onli(Language_Choice_db item)
         {
             // Else word have to update or onater
-            return App.database_Lang_C.update_item(item);
+            if (App.Database_Settins.GetItem(1).Like_Language == "True")
+            {
+                return App.database_Lang_C.update_item_like_language(item);
+            }
+            else
+            {
+                return App.database_Lang_C.update_item(item);
+            }
+            
         }
         public int update_item (Language_Choice_db item)
         {
@@ -56,6 +93,37 @@ namespace WordStudy.Resources.BaseData
             }
             
         }
+
+        public int update_item_like_language(Language_Choice_db item)
+        {
+            if (item.Language_Translated_Choice == null)
+            {
+                var item_date = database_Lang_C.Table<Language_Choice_db>().ToList().First();
+                var item_date_C = item_date.Language_Translated_Choice;
+                item.Language_Translated_Choice = item_date_C;
+                
+                Language_Choice_db class_Lang_C = new Language_Choice_db();
+                class_Lang_C.Id = item.Id;
+                class_Lang_C.Language_Choice = item.Language_Choice;
+                class_Lang_C.Language_Translated_Choice = item.Language_Translated_Choice;
+                return database_Lang_C.Update(class_Lang_C);
+            }
+            else
+            {
+                var item_date = database_Lang_C.Table<Language_Choice_db>().ToList().First();
+                var item_date_C = item_date.Language_Choice;
+                item.Language_Choice = item_date_C;
+                
+                Language_Choice_db class_Lang_C = new Language_Choice_db();
+                class_Lang_C.Id = item.Id;
+                class_Lang_C.Language_Choice = item.Language_Choice;
+                class_Lang_C.Language_Translated_Choice = item.Language_Translated_Choice;
+                return database_Lang_C.Update(class_Lang_C);
+            }
+
+        }
+
+
         public IEnumerable<Language_Choice_db> GetItems()
         {
             return database_Lang_C.Table<Language_Choice_db>();

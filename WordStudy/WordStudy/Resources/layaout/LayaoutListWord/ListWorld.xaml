@@ -38,7 +38,7 @@
 
             <Label Text="Transcription" FontAttributes="Bold"   Padding="20 0 0 0"/>
             <Frame CornerRadius="20"  BackgroundColor="#b0ffff" HasShadow="True" Padding="0 0 0 0">
-                <local:MyEntry x:Name="transcription" Text="{Binding Transcription}" Placeholder="Transcription" Keyboard="Chat" TabIndex="2" ReturnType="Default" Completed="MyEntry_Completed"/>
+                <local:MyEntry x:Name="transcription" Text="{Binding Transcription}" Placeholder="Transcription" Keyboard="Chat" TabIndex="2" ReturnType="Default"/>
             </Frame>
 
             <Button x:Name="Main_Button" Text="Добавить слово" CornerRadius="15" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Margin="30 50 0 50" Clicked="Button_Clicked"/>

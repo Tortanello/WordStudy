@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordStudy.Resources.layaout.Word.Word_Modal"
+             xmlns:local="clr-namespace:WordStudy.Resources.Custom"
+             BackgroundColor="#c8ffff">
+    <Frame CornerRadius="20"  
+       BorderColor="#4dbbfa"
+       BackgroundColor="#b0ffff"
+       HasShadow="True"
+       Margin="20 20 30 20">
+
+        <StackLayout Background="#b0ffff">
+
+            <Label Text="Слово" FontSize="25" HorizontalOptions="CenterAndExpand"  Margin="22 20 20 30" FontFamily="Times New Roman"/>
+
+            <Label Text="Language" FontAttributes="Bold" Padding="20 0 0 0"/>
+            <Frame CornerRadius="20"  BackgroundColor="#b0ffff" HasShadow="True"  Padding="0 0 0 0" Margin="0 150 0 0" VerticalOptions="Start">
+                <local:MyEntry Text="{Binding Language}" x:Name="MyEntry_Language" IsReadOnly="False" TabIndex="0" Keyboard="Chat" ReturnType="Go"/>
+            </Frame>
+
+            <Label Text="Language Translated" FontAttributes="Bold" Padding="4 0 0 0" Margin="-96.7 0 0 150" />
+            <Frame CornerRadius="20"  BackgroundColor="#b0ffff" HasShadow="True"  Padding="0 0 0 0"  Margin="0 0 0 150"  VerticalOptions="Start" >
+                <local:MyEntry Text="{Binding Language_Translated}" x:Name="MyEntry_Language_translated"  IsReadOnly="False" TabIndex="1" Keyboard="Chat" ReturnType="Go"/>
+            </Frame>
+
+            <Label Text="Word" FontAttributes="Bold"   Padding="20 0 0 0"/>
+            <Frame CornerRadius="20"  BackgroundColor="#b0ffff" HasShadow="True"  Padding="0 0 0 0">
+                <local:MyEntry x:Name="word" Text="{Binding Word}"  Placeholder="Word" Keyboard="Chat" TabIndex="2" ReturnType="Next"/>
+            </Frame>
+
+            <Label Text="Translated" FontAttributes="Bold"   Padding="20 0 0 0"/>
+            <Frame CornerRadius="20"  BackgroundColor="#b0ffff" HasShadow="True"  Padding="0 0 0 0">
+                <local:MyEntry x:Name="translated" Text="{Binding Translated}"  Placeholder="Translated" Keyboard="Chat" TabIndex="3" ReturnType="Next"/>
+            </Frame>
+
+            <Label Text="Transcription" FontAttributes="Bold"   Padding="20 0 0 0"/>
+            <Frame CornerRadius="20"  BackgroundColor="#b0ffff" HasShadow="True" Padding="0 0 0 0">
+                <local:MyEntry x:Name="transcription" Text="{Binding Transcription}" Placeholder="Transcription" Keyboard="Chat" TabIndex="4" ReturnType="Default"/>
+            </Frame>
+
+            <Button x:Name="Main_Button" Text="Готово" CornerRadius="15" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Margin="30 50 0 50" Clicked="Button_Clicked"/>
+
+            <Button x:Name="Back" Text="Назад" FontAttributes="Bold" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 2 2 2"  FontSize="10" Margin="10 0 0 0" HorizontalOptions="Start"  VerticalOptions="Start" Clicked="Back_" />
+
+            <Button x:Name="ListWord" Text="Удалить" FontAttributes="Bold" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 2 2 2"  FontSize="10" Margin="-54 0 10 0" HorizontalOptions="EndAndExpand"  VerticalOptions="Start" Clicked="ListWord_" />
+        </StackLayout>
+    </Frame>
+</ContentPage>
