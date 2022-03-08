@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WordStudy.Resources.BaseData;
 using WordStudy.Resources.layaout.LayaoutListWord;
 using WordStudy.Resources.layaout.LayaoutListWord.Choice_My_List;
 using WordStudy.Resources.layaout.LayaoutListWord.SSf_C_Completed;
@@ -14,6 +15,7 @@ namespace WordStudy.Resources.layaout
     //[XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Start : ContentPage
     {
+        int num_lock = 0;
         public Start()
         {
             InitializeComponent();
@@ -31,16 +33,18 @@ namespace WordStudy.Resources.layaout
 
         async void Insert_Language(object sender, EventArgs e)
         {
+            num_lock = 1;
             MyEntry_Language.IsReadOnly = true;
-            //await Navigation.PushModalAsync(new Insert_Language());
-            MyEntry_Language.Text = "TEST";
+            await Navigation.PushModalAsync(new Insert_Language());
+            // MyEntry_Language.Text = "TEST";
             MyEntry_Language.IsReadOnly = false;
         }
         async void Insert_Language_Translated(object sender, EventArgs e)
         {
+            num_lock = 1;
             MyEntry_Language_translated.IsReadOnly = true;
-            //await Navigation.PushModalAsync(new Insert_Language_Translated());
-            MyEntry_Language_translated.Text = "TEST";
+            await Navigation.PushModalAsync(new Insert_Language_Translated());
+            // MyEntry_Language_translated.Text = "TEST";
             MyEntry_Language_translated.IsReadOnly = false;
         }
 
@@ -53,7 +57,11 @@ namespace WordStudy.Resources.layaout
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            return;
+            Classification_db classification = new Classification_db();
+            classification.First_Letter = First_Letter.Text;
+            classification.My_List = My_List.Text;
+            classification.Save_Settings = Save_Settings.Text;
+            App.Database_Classification.input_or_Update(classification);
         }
 
         private void Start_ (object sender, EventArgs e)
@@ -71,6 +79,19 @@ namespace WordStudy.Resources.layaout
             // First_Letter.Text = "None";
             My_List.Text = "None";
             Save_Settings.Text = "None";
+
+            var s = App.Database_Lang_C.GetItems_to_List().First();
+            MyEntry_Language.Text = s.Language_Choice;
+            MyEntry_Language_translated.Text = s.Language_Translated_Choice;
+            if (num_lock != 1)
+            {
+                MyEntry_Language.Text = "";
+                MyEntry_Language_translated.Text = "";
+            }
+            var w = App.Database_Classification.GetItems_to_List();
+            /*First_Letter.Text = w;
+            My_List.Text = w.
+            Save_Settings.Text = w.*/
             base.OnAppearing();
 
         }

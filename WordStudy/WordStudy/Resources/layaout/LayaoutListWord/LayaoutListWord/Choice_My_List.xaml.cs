@@ -40,7 +40,9 @@ namespace WordStudy.Resources.layaout.LayaoutListWord.Choice_My_List
 
         private void WordList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
+            var q = e.Item as Words_db;
 
+            Words_db w = q;
         }
     }
 }

@@ -18,24 +18,59 @@ namespace WordStudy.Resources.Class
 
             if (letter != null)
             {
-                for (int i = 0; i < date.Count(); i++)
+
+                if (letter.Length != 1)
                 {
-                    try
+                    for (int i = 0; i < date.Count(); i++)
                     {
-                        if (letter.ToUpper() == date.ElementAt(i).Word.First().ToString().ToUpper())
+                        char[] word_for = date.ElementAt(i).Word.ToCharArray();
+                        string fill_word = "";
+                        for (int c = 0; c < letter.Length; c++)
                         {
-                            // Подходящий элемент в массиве
-                            massiv_date_one[i] = i;
-                            count++;
+                            fill_word += word_for[c];
                         }
-                        else
+
+                        try
+                        {
+                            if (letter.ToUpper() == fill_word.ToUpper())
+                            {
+                                // Подходящий элемент в массиве
+                                massiv_date_one[i] = i;
+                                count++;
+                            }
+                            else
+                            {
+                                massiv_date_one[i] = -1;
+                            }
+                        }
+                        catch
                         {
                             massiv_date_one[i] = -1;
                         }
                     }
-                    catch
+                }
+
+                else
+                {
+                    for (int i = 0; i < date.Count(); i++)
                     {
-                        massiv_date_one[i] = -1;
+                        try
+                        {
+                            if (letter.ToUpper() == date.ElementAt(i).Word.First().ToString().ToUpper())
+                            {
+                                // Подходящий элемент в массиве
+                                massiv_date_one[i] = i;
+                                count++;
+                            }
+                            else
+                            {
+                                massiv_date_one[i] = -1;
+                            }
+                        }
+                        catch
+                        {
+                            massiv_date_one[i] = -1;
+                        }
                     }
                 }
             }
@@ -43,13 +78,12 @@ namespace WordStudy.Resources.Class
             {
                 for (int i = 0; i < date.Count(); i++)
                 {
-                    massiv_date_one[i] = date.ElementAt(i).Id;
+                    massiv_date_one[i] = i;
                     count++;
                 }
             }
-
             massiv_date_two = new int[date.Count()];
-            if (lang != null)
+            if (lang != "")
             {
                 for (int i = 0; i < massiv_date_one.Length; i++)
                 {
@@ -83,7 +117,7 @@ namespace WordStudy.Resources.Class
             }
 
             massiv_date_three = new int[date.Count()];
-            if (lang_trinslated != null)
+            if (lang_trinslated != "")
             {
                 for (int i = 0; i < massiv_date_two.Length; i++)
                 {

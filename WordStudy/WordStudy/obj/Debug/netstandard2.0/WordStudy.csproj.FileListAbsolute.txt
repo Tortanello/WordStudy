@@ -120,3 +120,4 @@ C:\Users\zheny\OneDrive\Документы\GitHub\WordStudy\WordStudy\WordStudy\
 C:\Users\zheny\OneDrive\Документы\GitHub\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.dll
 C:\Users\zheny\OneDrive\Документы\GitHub\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\ref\WordStudy.dll
 C:\Users\zheny\OneDrive\Документы\GitHub\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\WordStudy.pdb
+C:\Users\zheny\Desktop\Desktop\Programming\C#\WordStudy\WordStudy\WordStudy\obj\Debug\netstandard2.0\Resources\layaout\Start_Main.xaml.g.cs
