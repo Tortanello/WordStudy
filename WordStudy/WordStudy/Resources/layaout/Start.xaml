@@ -12,7 +12,7 @@
 
         <StackLayout Background="#b0ffff">
 
-            <Label Text="Поиск слов" FontSize="25" HorizontalOptions="CenterAndExpand"  Margin="22 20 20 30" FontFamily="Times New Roman"/>
+            <Label Text="Выбор слов" FontSize="25" HorizontalOptions="CenterAndExpand"  Margin="22 20 20 30" FontFamily="Times New Roman"/>
 
             <Label Text="Выбор Language" FontAttributes="Bold" Padding="20 0 0 0"/>
             <Frame CornerRadius="20"  BackgroundColor="#b0ffff" HasShadow="True"  Padding="0 0 0 0" Margin="0 150 0 0" VerticalOptions="Start">
@@ -29,14 +29,17 @@
                 <local:MyEntry x:Name="First_Letter" Text="{Binding First_Letter}"  Placeholder="Letters" Keyboard="Chat" TabIndex="0" ReturnType="Next"/>
             </Frame>
 
-            <Label Text="Выбранные слова" FontAttributes="Bold"   Padding="20 0 0 0"/>
+            <Label Text="Выбор по собственному списку слов" FontAttributes="Bold"   Padding="20 0 0 0"/>
+            <Frame CornerRadius="20"  BackgroundColor="#b0ffff" HasShadow="True"  Padding="0 0 0 0">
+                <local:MyEntry x:Name="My_List" Text="{Binding My_List}"  Placeholder="Selecting a list of words" IsReadOnly="False" Focused="Choice_My_List"/>
+            </Frame>
+
+            <Label Text="Сохранённые пресеты" FontAttributes="Bold"   Padding="20 0 0 0"/>
             <Frame CornerRadius="20"  BackgroundColor="#b0ffff" HasShadow="True" Padding="0 0 0 0">
                 <local:MyEntry x:Name="Save_Settings" Text="{Binding Save_Settings}" Placeholder="Save settings" IsReadOnly="False" Focused="Save_Settings_Completed"/>
             </Frame>
 
-            <Button x:Name="My_List" Text="Поиск" CornerRadius="15" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 40 2 40" Margin="10 0 0 0" Clicked="Choice_My_List" HorizontalOptions="Start"  VerticalOptions="Start"/>
-
-            <Button x:Name="Main_Button" Text="Сохранить" CornerRadius="15" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 23 2 23" Margin="-54 0 10 0" Clicked="Button_Clicked" HorizontalOptions="EndAndExpand"  VerticalOptions="Start"/>
+            <Button x:Name="Main_Button" Text="Сохранить" CornerRadius="15" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Margin="30 50 0 50" Clicked="Button_Clicked"/>
 
             <Button x:Name="Back" Text="Назад" FontAttributes="Bold" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 2 2 2"  FontSize="10" Margin="10 0 0 0" HorizontalOptions="Start"  VerticalOptions="Start" Clicked="Back_" />
 

@@ -15,7 +15,7 @@ namespace WordStudy.Resources.Class
             int[] massiv_date_three;
             int count = 0;
             int count_2 = 0;
-            //  Изменить направление с языка на слова
+
             if (letter != null)
             {
 
@@ -25,16 +25,9 @@ namespace WordStudy.Resources.Class
                     {
                         char[] word_for = date.ElementAt(i).Word.ToCharArray();
                         string fill_word = "";
-                        try
+                        for (int c = 0; c < letter.Length; c++)
                         {
-                            for (int c = 0; c < letter.Length; c++)
-                            {
-                                fill_word += word_for[c];
-                            }
-                        }
-                        catch (IndexOutOfRangeException)
-                        {
-
+                            fill_word += word_for[c];
                         }
 
                         try

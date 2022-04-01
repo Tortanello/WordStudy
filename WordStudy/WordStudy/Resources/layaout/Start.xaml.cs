@@ -23,12 +23,12 @@ namespace WordStudy.Resources.layaout
 
         private async void Choice_My_List(object sender, EventArgs e)
         {
-            //My_List.IsReadOnly = true;
+            My_List.IsReadOnly = true;
             string lang = MyEntry_Language.Text;
             string lang_translated = MyEntry_Language_translated.Text;
             string letter = First_Letter.Text;
             await Navigation.PushModalAsync(new Choice_My_List(letter, lang, lang_translated));
-            //My_List.IsReadOnly = false;
+            My_List.IsReadOnly = false;
         }
 
         async void Insert_Language(object sender, EventArgs e)
@@ -57,12 +57,11 @@ namespace WordStudy.Resources.layaout
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            // Нужно из массива взять слова и вставить их в эту базу данных
-            // Возможно можно удалить все Classification, кроме Classifications
-            /*Classifications_db classification = new Classifications_db();
-            classification.Words = First_Letter.Text;
-            classification.Name_Tabels = My_List.Text;
-            App.Database_Classification.input_or_Update(classification);*/
+            Classification_db classification = new Classification_db();
+            classification.First_Letter = First_Letter.Text;
+            classification.My_List = My_List.Text;
+            classification.Save_Settings = Save_Settings.Text;
+            App.Database_Classification.input_or_Update(classification);
         }
 
         private void Start_ (object sender, EventArgs e)
@@ -78,7 +77,7 @@ namespace WordStudy.Resources.layaout
             // MyEntry_Language.Text = "None";
             // MyEntry_Language_translated.Text = "None";
             // First_Letter.Text = "None";
-            // My_List.Text = "None";
+            My_List.Text = "None";
             Save_Settings.Text = "None";
 
             var s = App.Database_Lang_C.GetItems_to_List().First();

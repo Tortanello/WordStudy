@@ -19,7 +19,7 @@ namespace WordStudy.Resources.layaout
 
         private async void Words(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new Start_menu());
+            await Navigation.PushModalAsync(new Start());
         }
     }
 }
