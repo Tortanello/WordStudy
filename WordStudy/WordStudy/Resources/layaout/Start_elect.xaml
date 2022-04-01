@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordStudy.Resources.layaout.Start_elect"
+             xmlns:local="clr-namespace:WordStudy.Resources.Custom"
+             BackgroundColor="#c8ffff">
+    <Frame CornerRadius="20"  
+       BorderColor="#4dbbfa"
+       BackgroundColor="#b0ffff"
+       HasShadow="True"
+       Margin="20 20 30 20">
+
+
+
+        <StackLayout Background="#b0ffff">
+            <Label Text="Списки слов" FontSize="25" HorizontalOptions="CenterAndExpand"  Margin="22 20 20 30" FontFamily="Times New Roman"/>
+
+            <ListView ItemsSource="{Binding}" x:Name="WordList" ItemTapped="SwipeItem_Invoked_Del" SeparatorColor="#4dbbfa" HasUnevenRows="True"  SelectionMode="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <local:CustomViewCell SelectedItemBackgroundColor="#c8ffff">
+                            <ViewCell.View x:Name="VCV">
+                                <Grid ColumnSpacing="50">
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+
+                                    <Label x:Name="Language_Label" Text="{Binding Name_Tabels}" FontSize="Large" Margin="0 0 0 5" Grid.Column="0" Grid.Row="0"/>
+                                    <Label Text="{Binding AcountWords}" FontSize="Medium" TextColor="Gray" Margin="0 0 0 10" Grid.Column="0" Grid.Row="1"/>
+
+                                </Grid>
+                            </ViewCell.View>
+                        </local:CustomViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button x:Name="Back" Text="Назад" FontAttributes="Bold" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 2 2 2"  FontSize="10" Margin="10 0 0 0" HorizontalOptions="Start"  VerticalOptions="Start" Clicked="Back_" />
+
+            <Button x:Name="ListWord" Text="Создать новый" FontAttributes="Bold" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 5 2 5"  FontSize="10" Margin="-54 0 10 0" HorizontalOptions="EndAndExpand"  VerticalOptions="Start" Clicked="Start_" />
+        </StackLayout>
+
+    </Frame>
+</ContentPage>

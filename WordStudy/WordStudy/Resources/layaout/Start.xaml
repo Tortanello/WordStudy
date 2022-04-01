@@ -11,6 +11,62 @@
        Margin="20 20 30 20">
 
         <StackLayout Background="#b0ffff">
+
+            <Label Text="Поиск слов" FontSize="25" HorizontalOptions="CenterAndExpand"  Margin="22 20 20 30" FontFamily="Times New Roman"/>
+
+            <Label Text="Выбор Language" FontAttributes="Bold" Padding="20 0 0 0"/>
+            <Frame CornerRadius="20"  BackgroundColor="#b0ffff" HasShadow="True"  Padding="0 0 0 0" Margin="0 150 0 0" VerticalOptions="Start">
+                <local:MyEntry Text="{Binding Language}" x:Name="MyEntry_Language" Placeholder="None" IsReadOnly="False" Focused="Insert_Language" />
+            </Frame>
+
+            <Label Text="Выбор Language Translated" FontAttributes="Bold" Padding="4 0 0 0" Margin="-96.7 0 0 150" />
+            <Frame CornerRadius="20"  BackgroundColor="#b0ffff" HasShadow="True"  Padding="0 0 0 0"  Margin="0 0 0 150"  VerticalOptions="Start" >
+                <local:MyEntry Text="{Binding Language_Translated}" x:Name="MyEntry_Language_translated" Placeholder="None" IsReadOnly="False"  Focused="Insert_Language_Translated" />
+            </Frame>
+
+            <Label Text="Найти по letters" FontAttributes="Bold"   Padding="20 0 0 0"/>
+            <Frame CornerRadius="20"  BackgroundColor="#b0ffff" HasShadow="True"  Padding="0 0 0 0">
+                <local:MyEntry x:Name="First_Letter" Text="{Binding First_Letter}"  Placeholder="Letters" Keyboard="Chat" TabIndex="0" ReturnType="Next"/>
+            </Frame>
+
+            <Label Text="Выбранные слова" FontAttributes="Bold"   Padding="20 0 0 0"/>
+            <Frame CornerRadius="20"  BackgroundColor="#b0ffff" HasShadow="True" Padding="0 0 0 0">
+                <local:MyEntry x:Name="Save_Settings" Text="{Binding Save_Settings}" Placeholder="Save settings" IsReadOnly="False" Focused="Save_Settings_Completed"/>
+            </Frame>
+
+            <Button x:Name="My_List" Text="Поиск" CornerRadius="15" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 40 2 40" Margin="10 0 0 0" Clicked="Choice_My_List" HorizontalOptions="Start"  VerticalOptions="Start"/>
+
+            <Button x:Name="Main_Button" Text="Сохранить" CornerRadius="15" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 23 2 23" Margin="-54 0 10 0" Clicked="Button_Clicked" HorizontalOptions="EndAndExpand"  VerticalOptions="Start"/>
+
+            <Button x:Name="Back" Text="Назад" FontAttributes="Bold" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 2 2 2"  FontSize="10" Margin="10 0 0 0" HorizontalOptions="Start"  VerticalOptions="Start" Clicked="Back_" />
+
+            <Button x:Name="ListWord" Text="Начать" FontAttributes="Bold" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 2 2 2"  FontSize="10" Margin="-54 0 10 0" HorizontalOptions="EndAndExpand"  VerticalOptions="Start" Clicked="Start_" />
+        </StackLayout>
+    </Frame>
+</ContentPage>
+
+
+
+
+
+
+
+
+
+
+<!-- <?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WordStudy.Resources.layaout.Start"
+             xmlns:local="clr-namespace:WordStudy.Resources.Custom"
+             BackgroundColor="#c8ffff">
+    <Frame CornerRadius="20"  
+       BorderColor="#4dbbfa"
+       BackgroundColor="#b0ffff"
+       HasShadow="True"
+       Margin="20 20 30 20">
+
+        <StackLayout Background="#b0ffff">
             
             <Label Text="Выбор слов" FontSize="25" HorizontalOptions="CenterAndExpand"  Margin="22 20 20 30" FontFamily="Times New Roman"/>
 
@@ -24,9 +80,9 @@
                 <local:MyEntry Text="{Binding Language_Translated}" x:Name="MyEntry_Language_translated" Placeholder="None" IsReadOnly="False"  Focused="Insert_Language_Translated" />
             </Frame>
 
-            <Label Text="Выбор по первой letter" FontAttributes="Bold"   Padding="20 0 0 0"/>
+            <Label Text="Найти по letters" FontAttributes="Bold"   Padding="20 0 0 0"/>
             <Frame CornerRadius="20"  BackgroundColor="#b0ffff" HasShadow="True"  Padding="0 0 0 0">
-                <local:MyEntry x:Name="First_Letter" Text="{Binding First_Letter}"  Placeholder="First letter" Keyboard="Chat" TabIndex="0" ReturnType="Next" MaxLength="1"/>
+                <local:MyEntry x:Name="First_Letter" Text="{Binding First_Letter}"  Placeholder="Letters" Keyboard="Chat" TabIndex="0" ReturnType="Next"/>
             </Frame>
 
             <Label Text="Выбор по собственному списку слов" FontAttributes="Bold"   Padding="20 0 0 0"/>
@@ -46,4 +102,4 @@
             <Button x:Name="ListWord" Text="Начать" FontAttributes="Bold" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 2 2 2"  FontSize="10" Margin="-54 0 10 0" HorizontalOptions="EndAndExpand"  VerticalOptions="Start" Clicked="Start_" />
         </StackLayout>
     </Frame>
-</ContentPage>
+</ContentPage> -->

@@ -14,32 +14,46 @@
 
             <Label Text="Выбор списка слов" FontSize="25" HorizontalOptions="CenterAndExpand"  Margin="22 20 20 30" FontFamily="Times New Roman"/>
 
-            <ListView ItemsSource="{Binding}" x:Name="WordList" ItemTapped="WordList_ItemTapped" SeparatorColor="#4dbbfa" HasUnevenRows="True">
-                <ListView.ItemTemplate>
+            <CollectionView ItemsSource="{Binding}" x:Name="WordList" SelectionChanged="WordList_ItemTapped" ItemsLayout="VerticalList"  SelectionMode="Multiple">
+                <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <local:CustomViewCell SelectedItemBackgroundColor="#c8ffff">
-                            <ViewCell.View x:Name="VCV">
-                                <Grid ColumnSpacing="50">
+                        <Grid ColumnSpacing="50">
 
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="*" />
-                                        <RowDefinition Height="*" />
-                                    </Grid.RowDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup Name="CommonStates">
+                                    <VisualState Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="#c8ffff" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState Name="Normal">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="#b0ffff" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            
+                            <Label x:Name="Language_Label" Text="{Binding Word}" FontSize="Large" Margin="0 0 0 5" Grid.Column="0" Grid.Row="0" />
+                            <Label Text="{Binding Translated}" FontSize="Medium" TextColor="Gray" Margin="0 0 0 10" Grid.Column="0" Grid.Row="1"/>
 
-                                    <Label x:Name="Language_Label" Text="{Binding Word}" FontSize="Large" Margin="0 0 0 5" Grid.Column="0" Grid.Row="0"/>
-                                    <Label Text="{Binding Translated}" FontSize="Medium" TextColor="Gray" Margin="0 0 0 10" Grid.Column="0" Grid.Row="1"/>
+                            <Label Text="{Binding Language}" FontSize="17" Grid.Column="1" Margin="0 5 0 0" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="End"/>
 
-                                    <Label Text="{Binding Language}" FontSize="17" Grid.Column="1" Margin="0 5 0 0" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="End"/>
-
-                                    <Label x:Name="Do" Text="" FontSize="0" Margin="0 0 0 0" IsVisible="False"/>
-                                    <Label BindingContext="{x:Reference Name=Do}" Text="{Binding Path=Text}" FontSize="22" FontAttributes="Bold" Grid.Column="1" Margin="0 5 0 0" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="End"/>
-
-                                </Grid>
-                            </ViewCell.View>
-                        </local:CustomViewCell>
+                            <!--<Label x:Name="Do" Text="" FontSize="0" Margin="0 0 0 0" IsVisible="False"/>
+                                    <Label BindingContext="{x:Reference Name=Do}" Text="{Binding Path=Text}" FontSize="22" FontAttributes="Bold" Grid.Column="1" Margin="0 5 0 0" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="End"/>-->
+                            <BoxView HeightRequest="0.1" Color="#4dbbfa" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalOptions="End" Margin="5 5 0 5"/>
+                        </Grid>
                     </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Button x:Name="Back" Text="Назад" FontAttributes="Bold" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 2 2 2"  FontSize="10" Margin="10 0 0 0" HorizontalOptions="Start"  VerticalOptions="Start" Clicked="Back_" />
+
+            <Button x:Name="ListWord" Text="Начать" FontAttributes="Bold" CornerRadius="20" BackgroundColor="#fff" BorderColor="#4dbbfa" BorderWidth="1" Padding="2 2 2 2"  FontSize="10" Margin="-54 0 10 0" HorizontalOptions="EndAndExpand"  VerticalOptions="Start" Clicked="Start_" />
         </StackLayout>
     </Frame>
 </ContentPage>

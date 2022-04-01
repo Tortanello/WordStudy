@@ -30,10 +30,12 @@ namespace WordStudy.Resources.layaout
             /*await StartStudyF.ScaleTo(0.8, 30);
             await StartStudyF.ScaleTo(1,10);*/
             //StartStudyF.BorderColor = new Color(0.3, 0.73, 0.98);
-            Classification_db classification = new Classification_db();
-            Start listWordPage = new Start();
 
-            listWordPage.BindingContext = classification;
+            /*Classification_db classification = new Classification_db();*/
+            /*Start listWordPage = new Start();*/
+
+            /*listWordPage.BindingContext = classification;*/
+            Start_Main listWordPage = new Start_Main();
             await Navigation.PushModalAsync(listWordPage);
         }
 

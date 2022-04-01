@@ -12,7 +12,8 @@
           "NETStandard.Library": "2.0.3",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2244",
-          "sqlite-net-pcl": "1.7.335"
+          "sqlite-net-pcl": "1.7.335",
+          "Mono.Android": "0.0.0.0"
         },
         "runtime": {
           "WordStudy.dll": {}
@@ -134,6 +135,14 @@
             "fileVersion": "5.0.0.819"
           }
         }
+      },
+      "Mono.Android/0.0.0.0": {
+        "runtime": {
+          "Mono.Android.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
       }
     }
   },
@@ -233,6 +242,11 @@
       "sha512": "sha512-Ssr+0Pf11oHcaMHM4dHXW1NGex0h9uH7gQxuoLtiZcdPtXBli3SXzY3rF9ovp4Bw2mTe7cYpvy554pIpuW6fvA==",
       "path": "xamarin.forms/5.0.0.2244",
       "hashPath": "xamarin.forms.5.0.0.2244.nupkg.sha512"
+    },
+    "Mono.Android/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

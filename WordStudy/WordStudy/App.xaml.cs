@@ -28,6 +28,12 @@ namespace WordStudy
         public const string DATABASE_NAME_Save_Settigs_for_Classification = "SSf_Classification_db.db";
         public static Class_Save_Settigs_for_Classification database_SSf_Classification;
 
+        public const string DATABASE_NAME_Classifications = "Classifications_db.db";
+        public static Class_Classifications database_Classifications;
+
+        public const string DATABASE_NAME_WordsForStudy = "WordsForStudy.db";
+        public static Class_WordsForStudy database_WordsForStudy;
+
         public static Class_Words Database
         {
             get
@@ -151,6 +157,7 @@ namespace WordStudy
             }
         }
 
+        // Может быть можно будет удалить
         public static Class_Save_Settigs_for_Classification Database_SSf_Classification
         {
             get
@@ -162,6 +169,35 @@ namespace WordStudy
                             Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), DATABASE_NAME_Save_Settigs_for_Classification));
                 }
                 return database_SSf_Classification;
+            }
+        }
+        
+        // Содержит Списки Слов для изучения
+        public static Class_Classifications Database_Classifications
+        {
+            get
+            {
+                if (database_Classifications == null)
+                {
+                    database_Classifications = new Class_Classifications(
+                        Path.Combine(
+                            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), DATABASE_NAME_Classifications));
+                }
+                return database_Classifications;
+            }
+        }
+
+        public static Class_WordsForStudy Database_WordsForStudy
+        {
+            get
+            {
+                if (database_WordsForStudy == null)
+                {
+                    database_WordsForStudy = new Class_WordsForStudy(
+                        Path.Combine(
+                            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), DATABASE_NAME_WordsForStudy));
+                }
+                return database_WordsForStudy;
             }
         }
 

@@ -5,7 +5,17 @@
       "ProjectGuid": "1dcdde43-1224-4d78-afb2-90e3d9b877ea",
       "DisplayName": "WordStudy",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "671803c4-3580-40da-a537-a0dfb0f9a773": {
+      "ProjectGuid": "671803c4-3580-40da-a537-a0dfb0f9a773",
+      "DisplayName": "WordStudy.Android",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
